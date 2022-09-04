@@ -2,6 +2,13 @@
 
 /*basico da pagina a familia de fonte, cor da fonte,cor de fundo etc..*/
 
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body,
 html {
     font-family: 'roboto', sans-serif;
