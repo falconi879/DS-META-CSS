@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2? família=Roboto:wght@300;400;700&display=swap');
+
+/*basico da pagina a familia de fonte, cor da fonte,cor de fundo etc..*/
+
+body,
+html {
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: antiquewhite;
+}
+
+
+/*cabeçalho logo posicionamento e fundo gradiente*/
+
+header {
+    background: linear-gradient(180deg, #102347 0%, #181818 100%);
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*link */
+
+a,
+a:hover,
+a:visited {
+    color: unset;
+    text-decoration: none;
+}
+
+.cabecalho-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho-conteiner img {
+    width: 235px;
+}
+
+.cabecalho-conteiner h1 {
+    margin-top: 15px;
+    color: royalblue;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cabecalho-conteiner p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #102347;
+    border-radius: 10px;
+    padding: 30px 10px;
+    margin-bottom: 10px;
+}
+
+.titulo {
+    color: blue;
+}
+
+#vendas {
+    padding: 40px 10px;
+}
+
+.controle {
+    height: 46px;
+    background-color: #181818;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: antiquewhite;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.venda-container {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.tabela {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.tabela thead {
+    height: 55px;
+    font-size: 16px;
+    color: aliceblue;
+    font-weight: 700;
+    align-items: center;
+}
+
+.tabela tbody {
+    font-size: 14px;
+    font-weight: 400;
+    height: 74px;
+    color: beige;
+    text-align: center;
+}
+
+.tabela tbody tr {
+    height: 74px;
+    border-top: 1px solid #FFF;
+}
+
+.tabela tbody tr:hover>td {
+    background-color: darkblue;
+}
+
+
+/*cor das linha impares mais escuras (tabela)*/
+
+.tabela tbody tr:nth-child(odd) {
+    background-color: black;
+}
+
+.botao-notificar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-notificar {
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 167, 114, 0.1);
+    border: 1px solid #ff6b72;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.show576 {
+    display: none;
+}
+
+@media(min-width: 576px) {
+    .show576 {
+        display: table-cell;
+    }
+}
+
+.show976 {
+    display: none;
+}
+
+@media (min-width: 976px) {
+    .show976 {
+        display: table-cell;
+    }
+}
